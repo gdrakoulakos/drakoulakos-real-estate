@@ -1,0 +1,165 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  background-image: url("images/backgrounds/background.png");
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.logo {
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.menuButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around ; 
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none; 
+  color: rgb(107, 106, 106); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu a:hover {
+  border-radius: 15px 50px;
+  color: #9EB384;
+}
+
+.cards-alignment {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 25px;
+  position: relative;
+  padding: 25px 15px;
+  background-color:rgb(245, 240, 234);
+  margin: 20px 0;
+  width: 400px;
+  height: 350px;
+  box-shadow: 0 2px 5px #ccc;
+  text-align: left;
+  gap: 10px;
+}
+
+.top {
+  border-radius: 25px 25px 0 0;
+  height: 100px;
+  width: 100%;
+  background-color: #9EB384;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+}
+
+.name {
+  font-size: 2em;
+  color: #2d3436;
+  display: flex;
+  flex: 1;
+  margin: 10% 20px 0;
+}
+
+.house-img {
+  border-radius: 10%;
+  border: 7px solid #fff;
+  width: 140px;
+  height: 140px;
+  margin: 20px;
+}
+
+.middle {
+  margin-top: 120px;
+}
+
+.price {
+  margin: 20px 0;
+  color: #2e3d1d;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.info {
+  margin: 20px 0;
+  color: #565f4e;
+}
+
+.bottom {
+display: flex;
+justify-content: space-between;
+}
+
+footer {
+  color: #565f4e;
+  text-align: center;
+}
+
+@media only screen and (max-width: 980px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  li {
+    margin: 20px;
+    margin-top: 70px;
+  }
+
+  .card {
+    width: 900px;
+    height: 850px;
+  }
+
+  .top {
+    height: 200px;
+  }
+
+  .house-img {
+    width: 370px;
+    height: 370px;
+  }
+
+  .middle {
+    margin-top: 270px;
+    padding: 20px;
+  }
+
+  .price {
+    margin: 20px 0;
+    color: #2e3d1d;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .bottom {
+    padding: 20px;
+  }
+
+  .mapLogo {
+    width: 80px;
+    height: 80px;
+  }
+
+}
